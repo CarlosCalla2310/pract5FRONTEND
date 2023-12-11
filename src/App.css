@@ -1,38 +1,44 @@
+body {
+  background: linear-gradient(to bottom, #3498db, #5d1abc); /* Cambia los colores según tus preferencias */
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Cambia el color del texto */
+}
 .App {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  background-color: #fff; /* Cambia el color de fondo de cada producto */
+}
+
+.producto h3 {
+  color: #007bff; /* Cambia el color del título del producto */
+}
+
+.producto p {
+  color: #888; /* Cambia el color del texto del producto */
+}
+
+.producto button {
+  background-color: #4caf50;
   color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.producto button:hover {
+  background-color: #45a049;
 }
